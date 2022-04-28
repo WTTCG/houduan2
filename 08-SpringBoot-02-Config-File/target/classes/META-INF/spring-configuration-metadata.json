@@ -1,0 +1,87 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "com.fc.entity.Person",
+      "sourceType": "com.fc.entity.Person"
+    },
+    {
+      "name": "student",
+      "type": "com.fc.entity.Student",
+      "sourceType": "com.fc.entity.Student"
+    },
+    {
+      "name": "student.car",
+      "type": "com.fc.entity.Car",
+      "sourceType": "com.fc.entity.Car"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.username",
+      "type": "java.lang.String",
+      "sourceType": "com.fc.entity.Person"
+    },
+    {
+      "name": "student.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.fc.entity.Student"
+    },
+    {
+      "name": "student.birthday",
+      "type": "java.util.Date",
+      "sourceType": "com.fc.entity.Student"
+    },
+    {
+      "name": "student.car",
+      "type": "com.fc.entity.Car",
+      "sourceType": "com.fc.entity.Student"
+    },
+    {
+      "name": "student.car.brand",
+      "type": "java.lang.String",
+      "sourceType": "com.fc.entity.Car"
+    },
+    {
+      "name": "student.car.color",
+      "type": "java.lang.String",
+      "sourceType": "com.fc.entity.Car"
+    },
+    {
+      "name": "student.food",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.fc.entity.Student"
+    },
+    {
+      "name": "student.gender",
+      "type": "java.lang.String",
+      "sourceType": "com.fc.entity.Student"
+    },
+    {
+      "name": "student.hobby",
+      "type": "java.lang.String[]",
+      "sourceType": "com.fc.entity.Student"
+    },
+    {
+      "name": "student.info",
+      "type": "java.lang.String",
+      "sourceType": "com.fc.entity.Student"
+    },
+    {
+      "name": "student.married",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.fc.entity.Student"
+    },
+    {
+      "name": "student.name",
+      "type": "java.lang.String",
+      "sourceType": "com.fc.entity.Student"
+    },
+    {
+      "name": "student.score",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "com.fc.entity.Student"
+    }
+  ],
+  "hints": []
+}

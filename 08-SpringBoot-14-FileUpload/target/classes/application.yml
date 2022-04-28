@@ -1,0 +1,10 @@
+#spring:
+#  servlet:
+#    multipart:
+#      # ���������ļ��Ĵ�С
+#      max-request-size: 100MB
+#      # �����ļ�������С
+#      max-file-size: 10MB
+#      # �����ļ��ϴ���Ĭ�Ͼ���true
+#      enabled: true
+

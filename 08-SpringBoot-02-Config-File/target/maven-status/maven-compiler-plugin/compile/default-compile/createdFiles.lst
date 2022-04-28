@@ -1,0 +1,8 @@
+com\fc\entity\Person.class
+com\fc\controller\UerController.class
+com\fc\entity\Student.class
+com\fc\entity\Car.class
+com\fc\config\PersonConfig.class
+com\fc\controller\PersonController.class
+com\fc\controller\StudentController.class
+com\fc\Application.class

@@ -1,0 +1,8 @@
+com\fc\controller\UserController.class
+com\fc\dao\impl\UserDaoImpl.class
+com\fc\dao\impl\UserDaoMySQLImpl.class
+com\fc\test\UserTest.class
+com\fc\service\impl\UserServiceImpl.class
+com\fc\dao\UserDao.class
+com\fc\dao\impl\UserDaoOracleImpl.class
+com\fc\service\UserService.class

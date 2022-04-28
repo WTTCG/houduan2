@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.6</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.fc</groupId>
+    <artifactId>08-SpringBoot-07-Jsp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--SpringBoot使用了内嵌的tomcat,默认是不支持对jsp的解析的-->
+        <!--用于SpringBoot解析jsp页面-->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+        <!--配置SpringBoot解析jsp的资格路径-->
+<!--        <resources>-->
+<!--            <resource>-->
+<!--                &lt;!&ndash;项目的当前的路径&ndash;&gt;-->
+<!--                <directory>src/main/webapp</directory>-->
+<!--                &lt;!&ndash;目标路径，必须使用META-INF/resources&ndash;&gt;-->
+<!--                <targetPath>META-INF/resources</targetPath>-->
+<!--                &lt;!&ndash;包含了哪些文件&ndash;&gt;-->
+<!--                <includes>-->
+<!--                    &lt;!&ndash;第一个*代表多级路径&ndash;&gt;-->
+<!--                    &lt;!&ndash;第一个*代表文件名&ndash;&gt;-->
+<!--                    &lt;!&ndash;第一个*代表文件后缀名&ndash;&gt;-->
+<!--                    <include>**/*.*</include>-->
+<!--                </includes>-->
+<!--            </resource>-->
+<!--        </resources>-->
+    </build>
+
+
+</project>
